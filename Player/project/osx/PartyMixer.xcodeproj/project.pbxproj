@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37514C981536074C0027F013 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37514C971536074C0027F013 /* Cocoa.framework */; };
+		37601FAB1537594800C32DDF /* PMPlayerSpotifyOSX.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37601FAA1537594800C32DDF /* PMPlayerSpotifyOSX.mm */; };
+		376B206A1542205900F2E9CE /* libspotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376B20691542205900F2E9CE /* libspotify.framework */; };
+		37B5C6B6153621E700E18B8A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 37B5C6A5153621E700E18B8A /* Credits.rtf */; };
+		37B5C6B7153621E700E18B8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37B5C6A7153621E700E18B8A /* InfoPlist.strings */; };
+		37B5C6B8153621E700E18B8A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37B5C6A9153621E700E18B8A /* MainMenu.xib */; };
+		37B5C6BB153621E700E18B8A /* main_gui_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B5C6AE153621E700E18B8A /* main_gui_osx.m */; };
+		37B5C6C11536226C00E18B8A /* PartyMixer-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37B5C6BF1536226C00E18B8A /* PartyMixer-Info.plist */; };
+		37E96E0C153745BC00E586EE /* audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37E96E05153745BC00E586EE /* audio.cpp */; };
+		37E96E0D153745BC00E586EE /* PMPlayerSpotify_openal-audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37E96E07153745BC00E586EE /* PMPlayerSpotify_openal-audio.cpp */; };
+		37E96E0E153745BC00E586EE /* PMPlayerSpotify_osx-audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37E96E08153745BC00E586EE /* PMPlayerSpotify_osx-audio.cpp */; };
+		37E96E0F153745BC00E586EE /* PMPlayerSpotify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37E96E09153745BC00E586EE /* PMPlayerSpotify.cpp */; };
+		37E96E191537461300E586EE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E96E171537461300E586EE /* OpenAL.framework */; };
+		37E96E1A1537461300E586EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E96E181537461300E586EE /* AudioToolbox.framework */; };
+		37E96E1C15374A9300E586EE /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37E96E1B15374A9300E586EE /* AppDelegate.mm */; };
+		37E96E1F15374ADC00E586EE /* LoginView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37E96E1D15374ADC00E586EE /* LoginView.mm */; };
+		37E96E2015374ADC00E586EE /* PlayerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37E96E1E15374ADC00E586EE /* PlayerView.mm */; };
+		37EE45BC15422566006FD70B /* PMPlayerSpotifyMixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37EE45BA15422566006FD70B /* PMPlayerSpotifyMixer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37514C931536074C0027F013 /* PartyMixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyMixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37514C971536074C0027F013 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		37514C9A1536074C0027F013 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		37514C9B1536074C0027F013 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		37514C9C1536074C0027F013 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37601FAA1537594800C32DDF /* PMPlayerSpotifyOSX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PMPlayerSpotifyOSX.mm; sourceTree = "<group>"; };
+		3769E5201536B7970017918D /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		376B20691542205900F2E9CE /* libspotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libspotify.framework; path = ../../libspotify.framework; sourceTree = "<group>"; };
+		37B5C6A3153621E700E18B8A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		37B5C6A6153621E700E18B8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		37B5C6A8153621E700E18B8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37B5C6AA153621E700E18B8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		37B5C6AE153621E700E18B8A /* main_gui_osx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main_gui_osx.m; sourceTree = "<group>"; };
+		37B5C6BF1536226C00E18B8A /* PartyMixer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PartyMixer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		37B5C6C01536226C00E18B8A /* PartyMixer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PartyMixer-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		37B5C6C41536240D00E18B8A /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		37DFA8D7153755CD00374A04 /* PMPlayerSpotifyOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPlayerSpotifyOSX.h; sourceTree = "<group>"; };
+		37E96E05153745BC00E586EE /* audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audio.cpp; sourceTree = "<group>"; };
+		37E96E06153745BC00E586EE /* audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio.h; sourceTree = "<group>"; };
+		37E96E07153745BC00E586EE /* PMPlayerSpotify_openal-audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "PMPlayerSpotify_openal-audio.cpp"; sourceTree = "<group>"; };
+		37E96E08153745BC00E586EE /* PMPlayerSpotify_osx-audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "PMPlayerSpotify_osx-audio.cpp"; sourceTree = "<group>"; };
+		37E96E09153745BC00E586EE /* PMPlayerSpotify.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMPlayerSpotify.cpp; sourceTree = "<group>"; };
+		37E96E0A153745BC00E586EE /* PMPlayerSpotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPlayerSpotify.h; sourceTree = "<group>"; };
+		37E96E0B153745BC00E586EE /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		37E96E171537461300E586EE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		37E96E181537461300E586EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		37E96E1B15374A9300E586EE /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		37E96E1D15374ADC00E586EE /* LoginView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LoginView.mm; sourceTree = "<group>"; };
+		37E96E1E15374ADC00E586EE /* PlayerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlayerView.mm; sourceTree = "<group>"; };
+		37EE45BA15422566006FD70B /* PMPlayerSpotifyMixer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMPlayerSpotifyMixer.cpp; sourceTree = "<group>"; };
+		37EE45BB15422566006FD70B /* PMPlayerSpotifyMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPlayerSpotifyMixer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37514C901536074C0027F013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37514C981536074C0027F013 /* Cocoa.framework in Frameworks */,
+				37E96E191537461300E586EE /* OpenAL.framework in Frameworks */,
+				37E96E1A1537461300E586EE /* AudioToolbox.framework in Frameworks */,
+				376B206A1542205900F2E9CE /* libspotify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37514C881536074C0027F013 = {
+			isa = PBXGroup;
+			children = (
+				37B5C69E153621E700E18B8A /* src */,
+				37514C961536074C0027F013 /* Frameworks */,
+				37514C941536074C0027F013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37514C941536074C0027F013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37514C931536074C0027F013 /* PartyMixer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37514C961536074C0027F013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				376B20691542205900F2E9CE /* libspotify.framework */,
+				37514C9A1536074C0027F013 /* AppKit.framework */,
+				37E96E181537461300E586EE /* AudioToolbox.framework */,
+				37514C971536074C0027F013 /* Cocoa.framework */,
+				37514C9B1536074C0027F013 /* CoreData.framework */,
+				37514C9C1536074C0027F013 /* Foundation.framework */,
+				37E96E171537461300E586EE /* OpenAL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37B5C69E153621E700E18B8A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				37B5C6A1153621E700E18B8A /* gui */,
+				37E96E05153745BC00E586EE /* audio.cpp */,
+				37E96E06153745BC00E586EE /* audio.h */,
+				37B5C6AE153621E700E18B8A /* main_gui_osx.m */,
+				37B5C6BF1536226C00E18B8A /* PartyMixer-Info.plist */,
+				37B5C6C01536226C00E18B8A /* PartyMixer-Prefix.pch */,
+				37E96E09153745BC00E586EE /* PMPlayerSpotify.cpp */,
+				37E96E0A153745BC00E586EE /* PMPlayerSpotify.h */,
+				37EE45BA15422566006FD70B /* PMPlayerSpotifyMixer.cpp */,
+				37EE45BB15422566006FD70B /* PMPlayerSpotifyMixer.h */,
+				37601FAA1537594800C32DDF /* PMPlayerSpotifyOSX.mm */,
+				37DFA8D7153755CD00374A04 /* PMPlayerSpotifyOSX.h */,
+				37E96E07153745BC00E586EE /* PMPlayerSpotify_openal-audio.cpp */,
+				37E96E08153745BC00E586EE /* PMPlayerSpotify_osx-audio.cpp */,
+				37E96E0B153745BC00E586EE /* queue.h */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		37B5C6A1153621E700E18B8A /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				37B5C6A2153621E700E18B8A /* osx */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
+		37B5C6A2153621E700E18B8A /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				37B5C6A3153621E700E18B8A /* AppDelegate.h */,
+				37E96E1B15374A9300E586EE /* AppDelegate.mm */,
+				37B5C6A5153621E700E18B8A /* Credits.rtf */,
+				37B5C6A7153621E700E18B8A /* InfoPlist.strings */,
+				37B5C6A9153621E700E18B8A /* MainMenu.xib */,
+				37B5C6C41536240D00E18B8A /* LoginView.h */,
+				37E96E1D15374ADC00E586EE /* LoginView.mm */,
+				3769E5201536B7970017918D /* PlayerView.h */,
+				37E96E1E15374ADC00E586EE /* PlayerView.mm */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37514C921536074C0027F013 /* PartyMixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37514CB11536074D0027F013 /* Build configuration list for PBXNativeTarget "PartyMixer" */;
+			buildPhases = (
+				37514C8F1536074C0027F013 /* Sources */,
+				37514C901536074C0027F013 /* Frameworks */,
+				37514C911536074C0027F013 /* Resources */,
+				37233930153CCD5700A73226 /* Copy Product */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PartyMixer;
+			productName = PartyMixer;
+			productReference = 37514C931536074C0027F013 /* PartyMixer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37514C8A1536074C0027F013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 37514C8D1536074C0027F013 /* Build configuration list for PBXProject "PartyMixer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 37514C881536074C0027F013;
+			productRefGroup = 37514C941536074C0027F013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37514C921536074C0027F013 /* PartyMixer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37514C911536074C0027F013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B5C6B6153621E700E18B8A /* Credits.rtf in Resources */,
+				37B5C6B7153621E700E18B8A /* InfoPlist.strings in Resources */,
+				37B5C6B8153621E700E18B8A /* MainMenu.xib in Resources */,
+				37B5C6C11536226C00E18B8A /* PartyMixer-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37233930153CCD5700A73226 /* Copy Product */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME,
+			);
+			name = "Copy Product";
+			outputPaths = (
+				$PROJECT_DIR/../../../bin/osx/$CONFIGURATION/$EXECUTABLE_NAME,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -d \"$PROJECT_DIR/../../../bin/osx/$CONFIGURATION\" ]\nthen\n  mkdir -p \"$PROJECT_DIR/../../../bin/osx/$CONFIGURATION\"\nelse\n  if [ -d \"$PROJECT_DIR/../../../bin/osx/$CONFIGURATION/$EXECUTABLE_NAME.app/\" ]\n  then\n    rm -rf \"$PROJECT_DIR/../../../bin/osx/$CONFIGURATION/$EXECUTABLE_NAME.app/\"\n  fi\nfi\n\ncp -R \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.app/\" \"$PROJECT_DIR/../../../bin/osx/$CONFIGURATION/$EXECUTABLE_NAME.app/\"\nmkdir -p \"$PROJECT_DIR/../../../bin/osx/$CONFIGURATION/$EXECUTABLE_NAME.app/Contents/Frameworks\"\ncp -RH \"$PROJECT_DIR/../../libspotify.framework/\" \"$PROJECT_DIR/../../../bin/osx/$CONFIGURATION/$EXECUTABLE_NAME.app/Contents/Frameworks/libspotify.framework\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37514C8F1536074C0027F013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B5C6BB153621E700E18B8A /* main_gui_osx.m in Sources */,
+				37E96E0C153745BC00E586EE /* audio.cpp in Sources */,
+				37E96E0D153745BC00E586EE /* PMPlayerSpotify_openal-audio.cpp in Sources */,
+				37E96E0E153745BC00E586EE /* PMPlayerSpotify_osx-audio.cpp in Sources */,
+				37E96E0F153745BC00E586EE /* PMPlayerSpotify.cpp in Sources */,
+				37E96E1C15374A9300E586EE /* AppDelegate.mm in Sources */,
+				37E96E1F15374ADC00E586EE /* LoginView.mm in Sources */,
+				37E96E2015374ADC00E586EE /* PlayerView.mm in Sources */,
+				37601FAB1537594800C32DDF /* PMPlayerSpotifyOSX.mm in Sources */,
+				37EE45BC15422566006FD70B /* PMPlayerSpotifyMixer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		37B5C6A5153621E700E18B8A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B5C6A6153621E700E18B8A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		37B5C6A7153621E700E18B8A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B5C6A8153621E700E18B8A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		37B5C6A9153621E700E18B8A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37B5C6AA153621E700E18B8A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37514CAF1536074D0027F013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		37514CB01536074D0027F013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		37514CB21536074D0027F013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../thirdparty/libspotify-11.1.60-Darwin-universal\"",
+					"\"$(SRCROOT)/../../../../csound5\"",
+					"\"$(SRCROOT)/../..\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PartyMixer-Prefix.pch";
+				INFOPLIST_FILE = "PartyMixer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		37514CB31536074D0027F013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../thirdparty/libspotify-11.1.60-Darwin-universal\"",
+					"\"$(SRCROOT)/../../../../csound5\"",
+					"\"$(SRCROOT)/../..\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PartyMixer-Prefix.pch";
+				INFOPLIST_FILE = "PartyMixer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37514C8D1536074C0027F013 /* Build configuration list for PBXProject "PartyMixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37514CAF1536074D0027F013 /* Debug */,
+				37514CB01536074D0027F013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37514CB11536074D0027F013 /* Build configuration list for PBXNativeTarget "PartyMixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37514CB21536074D0027F013 /* Debug */,
+				37514CB31536074D0027F013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37514C8A1536074C0027F013 /* Project object */;
+}

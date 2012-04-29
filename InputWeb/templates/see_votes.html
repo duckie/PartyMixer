@@ -1,0 +1,12 @@
+<html>
+  <body>
+    {% for vote in votes %}
+      {% if greeting.author %}
+        <b>NO THERE IS NO AUTHOR BITCH</b>
+      {% else %}
+       
+      {% endif %}
+      <div>{{ vote.date|escape }} | {{ vote.mood|escape }} | {{ vote.like|escape }}</div>
+    {% endfor %}
+  </body>
+</html>

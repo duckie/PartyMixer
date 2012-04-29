@@ -1,0 +1,6 @@
+*~
+*.pyc
+*/.DS_Store
+*.pickle
+Moteur/smile.log
+

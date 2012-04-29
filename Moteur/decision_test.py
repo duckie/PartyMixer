@@ -1,0 +1,3 @@
+songs = ["spotify-WW:track:0NS13CiQ8v3Guqr1qBBiEC","spotify-WW:track:0a99kpA6C2GUlMtNqvU7Jo","spotify-WW:track:2ulFCmqfFSTEqVAdZMdT8v","spotify-WW:track:6FgI1H812qqHXwcUKW73Pk","spotify-WW:track:3kxLcUrxm7xuH50qTSJyYh","spotify-WW:track:5spgQmNivWiqFMl9smDU3m","spotify-WW:track:6rOreYQzm398nCEYOFDAyt","spotify-WW:track:2jmwNDqrejnkgp5ym0G084","spotify-WW:track:6O7EYksaHKRsfpn1ZKoWUe","spotify-WW:track:4NliSonEWFOnMJooEJZNMc","spotify-WW:track:3m774Q3cyzu5eUSRnNtre5","spotify-WW:track:3qdwkMUw26bDv8ofnq9k2c","spotify-WW:track:2a8yHcLutr4TdJYB6lKa27","spotify-WW:track:2oytx202506IiJHlQfGRvh","spotify-WW:track:6P8FHUZrH7GNuS4EISDayG"]
+for s in songs:
+    print s

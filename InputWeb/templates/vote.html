@@ -1,0 +1,126 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.19.custom.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+    <style>
+        .element {
+            margin:0.5em 100px 0.5em 100px;
+        }
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+.img { text-align:center;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+#vote { font-size:100px; }
+.sendbutton { width:100%;height:100px; }
+.img img {  height:60px; }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+#vote { font-size:250px; }
+.sendbutton { width:100%;height:250px; }
+.img img {  height:130px; }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+.img { text-align:center;}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+#vote { font-size:100px; }
+.sendbutton { width:100%;height:100px; }
+.img img {  height:60px; }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+#vote { font-size:250px; }
+.sendbutton { width:100%;height:250px; }
+.img img {  height:130px; }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+#vote { font-size:50px; }
+.sendbutton { width:100%;height:50px; }
+.img { text-align:center;}
+.img img {  height:100px; }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+#vote { font-size:50px; }
+.sendbutton { width:100%;height:50px; }
+.img { text-align:center;}
+.img img {  height:100px; }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+#vote { font-size:250px; }
+.sendbutton { width:100%;height:250px; }
+.img { text-align:center;}
+.img img {  height:130px; }
+}
+
+        /*.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 220px; height: 220px; cursor: default; }
+        .ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+        .ui-slider-horizontal { height:200px; }*/
+
+    </style>
+    <script>
+        function update_mood(event, ui)
+        {
+            $("#mood").val(ui.value);
+        }
+
+        function update_like(event, ui)
+        {
+            $("#like").val(ui.value);
+        }
+
+        $(document).ready(function(){
+            $("#slider-mood").slider({min:-10,max:10,value:0,change:update_mood});
+            $("#slider-like").slider({min:-10,max:10,value:0,change:update_like});
+        });
+    </script>
+</head>
+  <body>
+    <form id="vote" action="/vote" method="post">
+      <div class="img"><img src="css/mood.png" /></div>
+      <div class="slider element" id="slider-mood"></div>
+      <div class="img"><img src="css/like.png" /></div>
+      <div class="slider element" id="slider-like"></div>
+      <div><input id="mood" type="hidden" name="mood" value="0" /></div>
+      <div><input id="like" type="hidden" name="like" value="0" /></div>
+      <div class="element"><input class="sendbutton" type="submit" value="Send vote"></div>
+    </form>
+
+  </body>
+</html>

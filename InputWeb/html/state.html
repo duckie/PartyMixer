@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Party Mixer 2</title>
+    <link rel="stylesheet" href="../css/ui-lightness/jquery-ui-1.8.19.custom.css" />
+	<script src="../js/jquery-1.7.2.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+<script>
+
+var i = -10;
+
+function update_sliders()
+{
+  $.getJSON('../dump_mean', function(data)
+  {
+    $("#slider-mood").slider("value",data.mood);
+    $("#slider-like").slider("value",data.like);
+  });
+}
+
+        $(document).ready(function(){
+            $("#slider-mood").slider({min:-10,max:10,value:0});
+            $("#slider-like").slider({min:-10,max:10,value:0});
+
+            window.setInterval(function(){
+             update_sliders();
+            },1000);
+        });
+</script>
+<style>
+        .element {
+            margin:0.5em 100px 0.5em 100px;
+        }
+
+body { font-size:70px; }
+
+.img { text-align:center;}
+</style>
+</head>
+  <body>
+      <div class="img"><img src="../css/mood.png" /></div>
+      <div class="slider element" id="slider-mood"></div>
+      <div class="img"><img src="../css/like.png" /></div>
+      <div class="slider element" id="slider-like"></div>
+  </body>
+</html>
+
+
